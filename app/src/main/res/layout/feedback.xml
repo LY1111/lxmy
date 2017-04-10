@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/another_grey">
+
+    <!--意见反馈-->
+    <include layout="@layout/common_appbar"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--反馈类型-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_menu_height"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择反馈类型"
+                    android:textSize="@dimen/small_text_size"
+                    android:layout_centerVertical="true"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_menu_height"
+                    android:layout_alignParentRight="true">
+                </android.support.v7.widget.AppCompatSpinner>
+            </RelativeLayout>
+
+            <!--反馈内容及照片-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/common_margin"
+                android:background="@android:color/white">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/tiezi_height"
+                    android:background="@null"
+                    android:hint="请填写您遇到的问题或者建议..."
+                    android:gravity="top"
+                    android:paddingTop="@dimen/common_margin"
+                    android:textColorHint="@color/small_grey"
+                    android:paddingBottom="@dimen/common_margin"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_margin">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <!--联系方式-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_menu_height"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:hint="请填写您的联系方式(邮箱/QQ)"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:textSize="@dimen/small_text_size"/>
+
+            <!--提交-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_menu_height"
+                android:text="提交"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/big_dimmen"
+                android:background="@color/small_blue"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

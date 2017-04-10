@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:padding="@dimen/smaller_margin">
+
+    <!--会员-精选图片-->
+    <ImageView
+        android:id="@+id/jingxuan_left_top"
+        android:layout_width="@dimen/toobar_icon_size"
+        android:layout_height="@dimen/toobar_icon_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/smaller_margin">
+
+        <!--图片-->
+        <ImageView
+            android:id="@+id/jingxuan_pic_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/xiaopian_pic_height"
+            android:minHeight="@dimen/memory_item_height"
+            android:src="@mipmap/ic_launcher" />
+
+        <!--描述-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="侣行"
+            android:textSize="@dimen/small_text_size" />
+
+        <!--点赞等按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--下载-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/test"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="100" />
+            </RelativeLayout>
+
+            <!--评论-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/test"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="100" />
+            </RelativeLayout>
+
+            <!--点赞-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/test"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="100" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

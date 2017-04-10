@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/another_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请选择圈子"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/small_text_size"/>
+
+        <ImageView
+            android:layout_width="@dimen/small_tubiao"
+            android:layout_height="@dimen/small_tubiao"
+            android:background="@mipmap/to_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!--标题-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:background="@android:color/white"
+        android:layout_marginTop="1dp"
+        android:hint="请输入标题,建议4-26个字"
+        android:paddingLeft="@dimen/common_margin"
+        android:textSize="@dimen/small_text_size"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--视频详情页-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/big_menu_height">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--底部按钮-->
+    <RelativeLayout
+        android:id="@+id/video_tab_below"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <!--输入评论-->
+        <EditText
+            android:id="@+id/video_xiangqing_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/pingbar"
+            android:hint="评论"
+            android:padding="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/pingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/small_margin">
+
+            <!--评论-->
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/ic_launcher"/>
+
+            <!--进入评论列表页面-->
+            <RelativeLayout
+                android:id="@+id/to_all_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="666+"
+                    android:layout_alignTop="@+id/pinglun_btn"
+                    android:layout_toRightOf="@+id/pinglun_btn"/>
+
+                <ImageView
+                    android:id="@+id/pinglun_btn"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_marginLeft="@dimen/small_margin"/>
+            </RelativeLayout>
+
+            <!--分享-->
+            <ImageView
+                android:id="@+id/video_xiangqing_fenxiang"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_marginLeft="@dimen/small_margin"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--底部按钮-图片详情-->
+    <LinearLayout
+        android:id="@+id/pic_tab_below"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <!--下载-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+        <!--点赞-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+
+        <!--进入评论列表-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/pic_to_all_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="666+"
+                    android:layout_alignTop="@+id/pic_pinglun_btn"
+                    android:layout_toRightOf="@+id/pic_pinglun_btn"/>
+
+                <ImageView
+                    android:id="@+id/pic_pinglun_btn"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@mipmap/ic_launcher"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--分享-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pic_xiangqing_fenxiang"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_margin"
+    android:minHeight="@dimen/tiezi_height"
+    android:background="@android:color/white">
+
+    <!--头像-->
+    <ImageView
+        android:id="@+id/pinglun_icon"
+        android:layout_width="@dimen/pinglun_icon"
+        android:layout_height="@dimen/pinglun_icon"
+        android:background="@mipmap/ic_launcher"/>
+
+    <!--评论-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pinglun_icon">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/right_zan">
+
+                <!--用户名-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fortuneingever"
+                    android:textSize="@dimen/small_big_text"
+                    android:textColor="@color/small_blue"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <!--时间-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2小时前"
+                    android:textColor="@color/small_grey"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!--点赞-->
+            <RelativeLayout
+                android:id="@+id/right_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="666+"
+                    android:layout_alignTop="@+id/zan_btn"
+                    android:layout_toRightOf="@+id/zan_btn"/>
+
+                <ImageView
+                    android:id="@+id/zan_btn"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_marginLeft="@dimen/small_margin"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--评论内容-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text_size"
+            android:text="侣行">
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

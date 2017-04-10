@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/memory_item_height"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/common_margin"
+    android:paddingBottom="@dimen/common_margin"
+    android:paddingLeft="@dimen/small_margin"
+    android:paddingRight="@dimen/small_margin">
+
+    <!--侣行记忆-->
+    <ImageView
+        android:id="@+id/memory_pic"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_margin">
+
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="侣行"
+            android:textSize="@dimen/normal_text_size"
+            android:paddingBottom="@dimen/common_margin"/>
+
+        <!--来源-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:text="#侣行"/>
+
+        <!--播放量-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smaller_margin"
+            android:drawableLeft="@mipmap/back"
+            android:text="1.5万"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:textSize="@dimen/small_text_size"/>
+
+        <!--集数-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smaller_margin"
+            android:drawableLeft="@mipmap/back"
+            android:text="15集全"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:textSize="@dimen/small_text_size"/>
+
+        <!--最新消息-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="最新消息"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:textSize="@dimen/small_text_size"
+                android:layout_gravity="bottom"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/memory_msg"
+                android:background="#f1f1f1"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

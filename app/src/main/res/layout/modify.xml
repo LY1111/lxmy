@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/another_grey">
+
+    <!--修改个人信息-->
+    <include layout="@layout/common_appbar"></include>
+
+    <!--头像-->
+    <ImageView
+        android:layout_width="@dimen/touxiang"
+        android:layout_height="@dimen/touxiang"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/bigger_dimmen"
+        android:background="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_menu_height"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <!--昵称-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="您的昵称"
+            android:gravity="center"
+            android:textSize="@dimen/small_text_size"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="侣行"
+            android:textSize="@dimen/small_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_menu_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <!--性别-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="您的性别"
+            android:gravity="center"
+            android:textSize="@dimen/small_text_size"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="@dimen/small_text_size"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginLeft="@dimen/smaller_margin"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保密"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginLeft="@dimen/smaller_margin"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_menu_height"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="1dp">
+
+        <!--个性签名-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="个性签名"
+            android:gravity="center"
+            android:textSize="@dimen/small_text_size"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="侣行"
+            android:textSize="@dimen/small_text_size"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+</LinearLayout>

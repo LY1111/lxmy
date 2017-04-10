@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_tab_below">#3d454d</color>
+    <color name="tab_selected">#ea5d88</color>
+    <!--登录页面顶部背景-->
+    <color name="login_top">#191919</color>
+    <!--美工给的小灰色-->
+    <color name="small_grey">#cccccc</color>
+    <color name="grey">#efefef</color>
+    <color name="another_grey">#f6f6f6</color>
+    <!--侣行记忆最新消息-->
+    <color name="memory_msg">#ec4727</color>
+    <!--浅蓝-->
+    <color name="small_blue">#00a0e8</color>
+    <!--桃红-->
+    <color name="tao_hong">#e95d88</color>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/common_margin"
+    android:paddingBottom="@dimen/common_margin">
+
+    <!--资讯布局-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/zixun_pic_height"
+        android:background="@mipmap/ic_launcher"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/smaller_margin">
+
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size"
+            android:maxLines="2"
+            android:minHeight="@dimen/big_menu_height"
+            android:ellipsize="end"/>
+
+        <!--发布时间及浏览量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <!--发布时间-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="100"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/small_text_size"
+                android:id="@+id/textView" />
+
+            <!--浏览量-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="100"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/small_text_size"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

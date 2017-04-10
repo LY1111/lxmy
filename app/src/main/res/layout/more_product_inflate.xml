@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/small_grey"
+    android:padding="4dp">
+
+    <!--热门商品-inflate-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/more_product_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_tiezi_height"
+            android:background="@mipmap/ic_launcher"/>
+
+        <!--描述-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_margin"
+            android:text="侣店"
+            android:textColor="@android:color/black"/>
+
+        <!--价格等-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_menu_height"
+            android:gravity="center_vertical">
+
+            <!--价格-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tao_hong"
+                android:textSize="@dimen/small_text_size"
+                android:text="¥99"
+                android:paddingLeft="@dimen/common_margin"/>
+
+            <!--购买人数-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textColor="@android:color/darker_gray"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/common_margin"
+                android:drawableLeft="@mipmap/test"
+                android:drawablePadding="4dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

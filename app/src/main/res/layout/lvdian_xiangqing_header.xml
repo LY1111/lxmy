@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!--侣店-商品详情页-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiaopian_pic_height"
+        android:background="@mipmap/ic_launcher"/>
+
+    <!--简介-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_margin"
+        android:text="侣店"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/small_grey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_menu_height"
+        android:gravity="center_vertical">
+
+        <!--价格-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="¥70"
+            android:textColor="@color/tao_hong"
+            android:textSize="@dimen/small_normal_text"
+            android:paddingLeft="@dimen/common_margin"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:gravity="center"
+        android:background="@color/another_grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门商品"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--轮播图片-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_pager">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/header_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <!--小圆点-->
+        <LinearLayout
+            android:id="@+id/header_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--视频库的时候用-->
+    <LinearLayout
+        android:id="@+id/video_house_entrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/big_dimmen"
+        android:background="@android:color/white"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:visibility="gone">
+
+        <!--新鲜在线-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/xinxian_entrance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="新鲜在线"
+                android:textSize="@dimen/small_text_size"
+                android:duplicateParentState="true"/>
+        </LinearLayout>
+
+        <!--侣行记忆-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/memory_entrance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="侣行记忆"
+                android:textSize="@dimen/small_text_size"
+                android:duplicateParentState="true"/>
+        </LinearLayout>
+
+        <!--张梁记-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/zhangliang_entrance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="张梁记"
+                android:textSize="@dimen/small_text_size"
+                android:duplicateParentState="true"/>
+        </LinearLayout>
+
+        <!--疯狂小片-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/xiaopian_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="疯狂小片"
+                android:textSize="@dimen/small_text_size"
+                android:duplicateParentState="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

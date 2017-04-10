@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <include layout="@layout/common_appbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/big_dimmen">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:background="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/small_margin"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="系统通知"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/notice_msg_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/corner_with_solid"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:paddingRight="@dimen/small_margin"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@mipmap/to_right"
+                        android:layout_margin="@dimen/small_margin"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/common_margin">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:background="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/small_margin"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="圈子通知"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/to_right"
+                    android:layout_margin="@dimen/small_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/common_margin">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:background="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/small_margin"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="回复我的"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/to_right"
+                    android:layout_margin="@dimen/small_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d8d8"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:background="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/small_margin"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="评论我的"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/to_right"
+                    android:layout_margin="@dimen/small_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d8d8"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:background="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/small_margin"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="私聊我的"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/to_right"
+                    android:layout_margin="@dimen/small_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

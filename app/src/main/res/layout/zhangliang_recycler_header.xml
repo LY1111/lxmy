@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--张梁屋-header-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="@dimen/toobar_icon_size"
+            android:layout_height="@dimen/toobar_icon_size"
+            android:src="@mipmap/ic_launcher"/>
+
+        <!--背景图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+        <!--头像及简介-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <!--头像-->
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张梁屋"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_normal_text"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"/>
+
+            <!--简介-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="侣行"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/small_margin"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

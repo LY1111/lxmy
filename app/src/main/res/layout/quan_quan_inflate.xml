@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_margin"
+    android:background="@android:color/white">
+
+    <!--圈头像-->
+    <ImageView
+        android:id="@+id/quan_quan_pic"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/small_tiezi_height"
+        android:background="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <!--圈子标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="侣行"
+            android:textSize="@dimen/small_normal_text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+
+        <!--简介-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="侣行"
+            android:textSize="@dimen/small_text_size"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+
+        <!--内容-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="100万人加入|10000+内容"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/quan_quan_guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/road_a"
+            android:duplicateParentState="true"/>
+    </LinearLayout>
+</LinearLayout>

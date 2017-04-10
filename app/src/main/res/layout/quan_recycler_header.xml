@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <!--侣友圈-header-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_pager"
+        android:background="@mipmap/ic_launcher"/>
+
+    <!--官方圈子-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/common_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_menu_height"
+            android:gravity="center_vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/test"
+                android:text="推荐圈子"
+                android:gravity="center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/small_blue"
+                android:drawablePadding="4dp"
+                android:paddingLeft="@dimen/common_margin" />
+
+            <!--更多-->
+            <TextView
+                android:id="@+id/more_quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/common_margin"
+                android:text="更多"
+                android:textSize="@dimen/small_text_size"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <!--官方圈子-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/quan_recycler_official"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tiezi_height"
+            android:background="@android:color/white"
+            android:padding="@dimen/small_margin">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!--我的圈子-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/common_margin"
+        android:paddingBottom="@dimen/common_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_menu_height"
+            android:gravity="center_vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/test"
+                android:text="我的圈子"
+                android:gravity="center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/small_blue"
+                android:drawablePadding="4dp"
+                android:paddingLeft="@dimen/common_margin" />
+
+            <!--更多-->
+            <TextView
+                android:id="@+id/open_quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/common_margin"
+                android:text="申请开圈"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/tao_hong"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <!--我的圈子-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/quan_recycler_my"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tiezi_height"
+            android:background="@android:color/white"
+            android:padding="@dimen/small_margin">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

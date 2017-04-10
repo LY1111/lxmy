@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6">
+
+    <!--举报-->
+    <include layout="@layout/common_appbar"></include>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_marginTop="36dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_menu_height"
+                android:text="包含广告，或其他商业宣传性质的内容。"
+                android:textSize="@dimen/small_normal_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/common_margin"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_menu_height"
+                android:text="内容有错误，或涉嫌失实、欺诈与谣言等。"
+                android:textSize="@dimen/small_normal_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/common_margin"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_menu_height"
+                android:text="侵犯名誉权、肖像权等人身权利(侵犯个人隐私)。"
+                android:textSize="@dimen/small_normal_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/common_margin"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_menu_height"
+                android:text="内容侵犯著作权等知识产权。"
+                android:textSize="@dimen/small_normal_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/common_margin"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_menu_height"
+                android:text="其他。"
+                android:textSize="@dimen/small_normal_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/common_margin"/>
+        </FrameLayout>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/common_margin"
+            android:hint="详细说明（选填）"
+            android:minHeight="@dimen/big_menu_height"
+            android:paddingLeft="@dimen/smaller_margin"
+            android:paddingRight="@dimen/smaller_margin"
+            android:textSize="@dimen/smaller_text_size"
+            android:maxLines="4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f6f6f6"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/common_margin"/>
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="联系方式（手机/邮箱）"
+        android:minHeight="@dimen/big_menu_height"
+        android:paddingLeft="@dimen/smaller_margin"
+        android:paddingRight="@dimen/smaller_margin"
+        android:textSize="@dimen/smaller_text_size"
+        android:maxLines="4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@color/small_blue"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="36dp"
+        android:textSize="@dimen/small_normal_text"/>
+</LinearLayout>

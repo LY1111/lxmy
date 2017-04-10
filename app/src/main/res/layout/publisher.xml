@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/small_tiezi_height"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!--发布人、评论人-->
+    <ImageView
+        android:layout_width="@dimen/pinglun_icon"
+        android:layout_height="@dimen/pinglun_icon"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginLeft="@dimen/common_margin"/>
+
+    <!--用户名及时间等-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/smaller_margin"
+        android:gravity="center_vertical">
+
+        <!--用户名-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="fortuneingever"
+            android:textSize="@dimen/small_normal_text"
+            android:ellipsize="end"/>
+
+        <!--简介-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#宠物圈/10分钟前/100人浏览"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>

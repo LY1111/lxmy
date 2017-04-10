@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!--侣友圈-圈子-官方及我的圈子-inflate-->
+    <ImageView
+        android:id="@+id/small_quan_pic"
+        android:layout_width="@dimen/official_my_pic"
+        android:layout_height="@dimen/official_my_pic"/>
+
+    <!--圈子名称-->
+    <TextView
+        android:id="@+id/small_quan_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+</LinearLayout>

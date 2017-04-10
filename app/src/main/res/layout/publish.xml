@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/another_grey">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/publish_nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/big_menu_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_appbar"></include>
+
+            <include layout="@layout/publish_header"></include>
+
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/publish_swipe_menu_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin">
+            </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--底部button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/new_text_publish"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="写内容"
+            android:gravity="center"
+            android:textSize="@dimen/smaller_text_size"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginBottom="@dimen/smaller_margin"
+                android:background="@color/small_grey"/>
+
+            <TextView
+                android:id="@+id/new_pic_publish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="加图片"
+                android:gravity="center"
+                android:textSize="@dimen/smaller_text_size"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginBottom="@dimen/smaller_margin"
+                android:background="@color/small_grey"/>
+
+            <TextView
+                android:id="@+id/new_video_publish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="加视频"
+                android:gravity="center"
+                android:textSize="@dimen/smaller_text_size"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

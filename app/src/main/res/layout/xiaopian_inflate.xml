@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--小片-inflate-->
+    <ImageView
+        android:id="@+id/xiaopian_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiaopian_pic_height"
+        android:background="@mipmap/ic_launcher"/>
+
+    <!--更新时间-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:text="beyond"
+        android:padding="@dimen/small_margin"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_big_text"
+            android:textColor="@android:color/white"
+            android:text="everything i kown"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"/>
+
+        <!--来源及时长-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:text="#侣行 / 10:00''"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/common_margin"
+            android:drawableBottom="@mipmap/ic_launcher"
+            android:drawablePadding="@dimen/small_margin"/>
+
+        <!--评论等信息-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/common_margin">
+
+            <!--浏览数-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/zan_no_pic"
+                    android:layout_height="@dimen/zan_no_pic"
+                    android:background="@mipmap/liulan_no"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <!--评论数-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/small_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/zan_no_pic"
+                    android:layout_height="@dimen/zan_no_pic"
+                    android:background="@mipmap/pinglun_no"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <!--赞数-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/small_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/zan_no_pic"
+                    android:layout_height="@dimen/zan_no_pic"
+                    android:background="@mipmap/zan_no"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

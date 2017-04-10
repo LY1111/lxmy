@@ -1,0 +1,65 @@
+<resources>
+    <!--更大间距-->
+    <dimen name="bigger_dimmen">50dp</dimen>
+    <!--较大间距-->
+    <dimen name="small_big_dimen">40dp</dimen>
+    <!--大间距-->
+    <dimen name="big_dimmen">26dp</dimen>
+    <!--普通间距-->
+    <dimen name="common_margin">16dp</dimen>
+    <!--小间距-->
+    <dimen name="smaller_margin">6dp</dimen>
+    <!--普通行高-->
+    <dimen name="normal_menu_height">48dp</dimen>
+    <!--较大行高-->
+    <dimen name="big_menu_height">56dp</dimen>
+    <!--较大字体-->
+    <dimen name="big_text_size">26sp</dimen>
+    <!--稍大字体-->
+    <dimen name="small_big_text">23sp</dimen>
+    <!--普通字体大小-->
+    <dimen name="normal_text_size">21sp</dimen>
+    <dimen name="small_normal_text">19sp</dimen>
+    <!--较小字体-->
+    <dimen name="small_text_size">17sp</dimen>
+    <!--更小字体-->
+    <dimen name="smaller_text_size">14sp</dimen>
+    <!--小字体-->
+    <dimen name="small_margin">10dp</dimen>
+    <!--仿微信选择图片弹出相册高度inflate-->
+    <dimen name="pop_item">100dp</dimen>
+    <!--ViewPager高度-->
+    <dimen name="view_pager">200dp</dimen>
+    <!--单个帖子高度-RecyclerView-->
+    <dimen name="tiezi_height">140dp</dimen>
+    <!--普通CardView高度-->
+    <dimen name="normal_cardview">200dp</dimen>
+    <!--首页帖子中图片的高度-->
+    <dimen name="tiezi_pic_height">240dp</dimen>
+    <!--资讯中左边小图片高度-->
+    <dimen name="zixun_pic_height">110dp</dimen>
+    <!--视频列表大图片-->
+    <dimen name="video_list_pic">240dp</dimen>
+    <!--第三方登录图标大小-->
+    <dimen name="third_login">54dp</dimen>
+    <!--小片图片高度(list里)-->
+    <dimen name="xiaopian_pic_height">270dp</dimen>
+    <!--侣行记忆-inflate-->
+    <dimen name="memory_item_height">200dp</dimen>
+    <!--评论数等小图片-->
+    <dimen name="zan_no_pic">26dp</dimen>
+    <!--播放器高度-->
+    <dimen name="video_player">500dp</dimen>
+    <!--评论地区头像-->
+    <dimen name="pinglun_icon">68dp</dimen>
+    <!--大头像-->
+    <dimen name="touxiang">120dp</dimen>
+    <!--标题栏图标大小-->
+    <dimen name="toobar_icon_size">40dp</dimen>
+    <!--小图标-->
+    <dimen name="small_tubiao">26dp</dimen>
+    <!--侣友圈等的小帖子高度-->
+    <dimen name="small_tiezi_height">110dp</dimen>
+    <!--官方圈子及我的圈子图片高度-->
+    <dimen name="official_my_pic">98dp</dimen>
+</resources>

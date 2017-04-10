@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_marginLeft="@dimen/small_margin"
+    android:layout_marginRight="@dimen/small_margin">
+
+    <!--张梁屋-inflate-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/common_margin"
+        android:paddingBottom="@dimen/small_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        android:padding="@dimen/smaller_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/smaller_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="侣行"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_normal_text"
+                android:padding="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test"
+                    android:text="1天前"
+                    android:textColor="@color/small_grey"
+                    android:drawablePadding="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test"
+                    android:text="100人浏览"
+                    android:textColor="@color/small_grey"
+                    android:layout_marginLeft="@dimen/big_dimmen"
+                    android:drawablePadding="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/zl_bb"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="@dimen/smaller_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_launcher"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/smaller_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="侣行"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_normal_text"
+                    android:padding="4dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/test"
+                        android:text="1天前"
+                        android:textColor="@color/small_grey"
+                        android:drawablePadding="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/test"
+                        android:text="100人浏览"
+                        android:textColor="@color/small_grey"
+                        android:layout_marginLeft="@dimen/big_dimmen"
+                        android:drawablePadding="4dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--有话说-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@android:color/white"
+        android:padding="@dimen/smaller_margin"
+        android:layout_marginBottom="@dimen/small_big_dimen"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="张昕宇有话说"
+            android:drawableLeft="@mipmap/test"
+            android:drawablePadding="4dp"
+            android:textColor="@android:color/black"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="@dimen/small_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/small_margin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp">
+
+                        <!--头像-->
+                        <ImageView
+                            android:id="@+id/zl_inflate_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"/>
+
+                        <!--语音-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="2:30''"
+                            android:drawableLeft="@mipmap/ic_launcher"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/smaller_margin"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5天前"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="56dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

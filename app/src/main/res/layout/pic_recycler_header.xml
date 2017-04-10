@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--图片详情页-header-->
+    <ImageView
+        android:id="@+id/pic_recycler_header_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/small_margin"
+        android:text="侣行"
+        android:textSize="@dimen/small_normal_text"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/big_dimmen"
+        android:layout_marginBottom="@dimen/big_dimmen"/>
+</LinearLayout>

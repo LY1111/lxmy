@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tiezi_pic_height"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/common_margin"
+    android:paddingRight="@dimen/common_margin"
+    android:paddingTop="@dimen/common_margin"
+    android:layout_marginTop="@dimen/common_margin">
+
+    <!--侣店-inflate-->
+    <ImageView
+        android:id="@+id/lvdian_inflate_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher"
+        android:layout_above="@+id/lvdian_inflate_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/lvdian_inflate_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/test"
+            android:text="100"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥100"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/tao_hong"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tuansbook.lvxing.Activity.MainActivity"
+    android:background="@color/grey">
+
+    <include layout="@layout/common_appbar"></include>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/road_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--即使现在只显示一个View 也要用LinearLayout把多个View包裹起来 不然除第一个Fragment外其余均不显示内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--在路上-->
+            <include
+                android:id="@+id/road_content"
+                layout="@layout/content_road" />
+
+            <!--侣友圈-->
+            <include
+                android:id="@+id/quan_content"
+                layout="@layout/content_road"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--引入的时候因为版本不同，报NoSuchMethodError，编译器的问题，因为不同的控件用到了高版本的sdk，
+    在Project下查看ExternalLibraries,导入最高的sdk就好了-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/road_float_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="@dimen/common_margin"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

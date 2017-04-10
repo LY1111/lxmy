@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6">
+
+    <!--申请新圈子-->
+    <include layout="@layout/common_appbar"></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:background="@android:color/white"
+        android:hint="请填写您的圈子名称(4-10字)"
+        android:paddingLeft="4dp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/big_dimmen"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:minHeight="@dimen/view_pager"
+        android:hint="请填写您申请圈子的理由(10-700字)"
+        android:gravity="top"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="@dimen/common_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="圈子成立需要50人及以上支持者,经官方确认后圈子开通成功!"
+        android:drawableLeft="@mipmap/test"
+        android:drawablePadding="1dp"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingRight="@dimen/small_margin"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_menu_height"
+        android:background="@color/small_blue"
+        android:text="提交"
+        android:layout_marginLeft="@dimen/big_dimmen"
+        android:layout_marginRight="@dimen/big_dimmen"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/small_normal_text"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/big_dimmen"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <!--动态短信登录-->
+    <include layout="@layout/head_common"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginBottom="1dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入已绑定手机号码"
+            android:paddingLeft="@dimen/small_margin"
+            android:textColorHint="@color/small_grey"
+            android:inputType="phone"
+            android:maxLines="1"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ececec"
+            app:contentPadding="@dimen/small_margin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/common_margin"
+            app:cardCornerRadius="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:textSize="@dimen/small_text_size"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_menu_height"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:paddingLeft="@dimen/small_margin"
+            android:inputType="number"
+            android:textColorHint="@color/small_grey"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_menu_height"
+        app:cardBackgroundColor="#ec4727"
+        android:layout_marginTop="@dimen/big_dimmen"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_big_text"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
